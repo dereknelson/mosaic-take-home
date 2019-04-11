@@ -30,7 +30,6 @@ export function getStockInfo(args){
         let index = -1
         try {
             const result = await api.getStockInfo(args)
-            console.log('result1',result)
             // produce ensures immutability 
             const newStocks = produce(oldStocks, stocks => {
                 index = stocks.results.findIndex(stock => stock.symbol.toLowerCase() == args.stock.toLowerCase())
@@ -45,8 +44,6 @@ export function getStockInfo(args){
         }
     }
 }
-
-
 
 function getBalanceSheetError(error) {
     return { type: GET_BALANCE_SHEET_ERROR, error, }

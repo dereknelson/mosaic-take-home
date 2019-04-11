@@ -24,9 +24,8 @@ export default class HomeScreen extends Component {
         this.state = { text: '',  }
     }
     async componentDidMount(){
-        // const data = await this.props.getTopStocks()
-        const { navigation, stocks: { results } } = this.props
-        // navigation.navigate('BalanceSheetScreen', { item: results[0], index: 0 })
+        const { navigation, stocks: { results }, getTopStocks } = this.props
+        await getTopStocks()
     }
     render(){
         return (
@@ -61,10 +60,9 @@ export default class HomeScreen extends Component {
     handleText = (text) => {
         const { navigation, getStockPrice } = this.props
         this.setState({ text, })
+        // this is so we don't send a request on every keystroke
         this.searchTimeout = setTimeout(async () => {
-            console.log('hey',)
             const { price, hasError } = await getStockPrice({ stock: this.state.text, getWhat: 'price' })
-            console.log('item', price, hasError)
             this.setState({ price, hasError })
         }, 500)
     }

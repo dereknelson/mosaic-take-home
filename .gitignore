@@ -9,7 +9,7 @@
 *.ap_
 # Files for the ART/Dalvik VM
 *.dex
-.keys.js
+keys.js
 # Java class files
 *.class
 
