@@ -1210,6 +1210,14 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
   integrity sha512-ReZxvNHIOv88FlT7rxcXIIC0fPt4KZqZbOlivyWtXLt8ESx84zd3kMC6iK5jVeS2qt+g7ftS7ye4fi06X5rtRQ==
 
+axios@^0.18.0:
+  version "0.18.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
+  integrity sha1-MtU+SFHv3AoRmTts0AB4nXDAUQI=
+  dependencies:
+    follow-redirects "^1.3.0"
+    is-buffer "^1.1.5"
+
 babel-code-frame@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-code-frame/-/babel-code-frame-6.26.0.tgz#63fd43f7dc1e3bb7ce35947db8fe369a3f58c74b"
@@ -2275,7 +2283,7 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.8, debug@^2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@^3.1.0:
+debug@^3.1.0, debug@^3.2.6:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
   integrity sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
@@ -2489,6 +2497,23 @@ es-to-primitive@^1.2.0:
     is-callable "^1.1.4"
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
+
+es6-template-regex@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/es6-template-regex/-/es6-template-regex-0.1.1.tgz#e517b9e0f742beeb8d3040834544fda0e4651467"
+  integrity sha1-5Re54PdCvuuNMECDRUT9oORlFGc=
+
+es6-template@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/es6-template/-/es6-template-1.0.4.tgz#56af42b57a31f5175d3f567d44b1efc12d2f2636"
+  integrity sha1-Vq9CtXox9RddP1Z9RLHvwS0vJjY=
+  dependencies:
+    es6-template-regex "^0.1.1"
+    extend-shallow "^2.0.1"
+    get-value "^2.0.2"
+    lazy-cache "^1.0.3"
+    mkdirp "^0.5.1"
+    sliced "^1.0.1"
 
 escape-html@~1.0.3:
   version "1.0.3"
@@ -3216,6 +3241,13 @@ find-up@^3.0.0:
   dependencies:
     locate-path "^3.0.0"
 
+follow-redirects@^1.3.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.7.0.tgz#489ebc198dc0e7f64167bd23b03c4c19b5784c76"
+  integrity sha512-m/pZQy4Gj287eNy94nivy5wchN3Kp+Q5WgUPNy5lJSZ3sgkVKSYV/ZChMAQVIgx1SqfZ2zBZtPA2YlXIWxxJOQ==
+  dependencies:
+    debug "^3.2.6"
+
 for-in@^1.0.1, for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -3323,7 +3355,7 @@ get-stream@^3.0.0:
   resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-3.0.0.tgz#8e943d1358dc37555054ecbe2edb05aa174ede14"
   integrity sha1-jpQ9E1jcN1VQVOy+LtsFqhdO3hQ=
 
-get-value@^2.0.3, get-value@^2.0.6:
+get-value@^2.0.2, get-value@^2.0.3, get-value@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/get-value/-/get-value-2.0.6.tgz#dc15ca1c672387ca76bd37ac0a395ba2042a2c28"
   integrity sha1-3BXKHGcjh8p2vTesCjlbogQqLCg=
@@ -3553,6 +3585,11 @@ immediate@^3.2.2:
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/immediate/-/immediate-3.2.3.tgz#d140fa8f614659bd6541233097ddaac25cdd991c"
   integrity sha1-0UD6j2FGWb1lQSMwl92qwlzdmRw=
+
+immer@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-2.1.5.tgz#0389947455c5a2c7a47f1e6f415c9d1a62a1ebed"
+  integrity sha512-xyjQyTBYIeiz6jd02Hg12jV+9QISwF1crLcwTlzHpWH4e0ryNWj1kacpTwimK3bJV5NKKXw458G2vpqoB/inFA==
 
 import-fresh@^2.0.0:
   version "2.0.0"
@@ -4485,6 +4522,11 @@ kleur@^2.0.1:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-2.0.2.tgz#b704f4944d95e255d038f0cb05fb8a602c55a300"
   integrity sha512-77XF9iTllATmG9lSlIv0qdQ2BQ/h9t0bJllHlbvsQ0zUWfU7Yi0S8L5JXzPZgkefIiajLmBJJ4BsMJmqcf7oxQ==
 
+lazy-cache@^1.0.3:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/lazy-cache/-/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
+  integrity sha1-odePw6UEdMuAhF07O24dpJpEbo4=
+
 lcid@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/lcid/-/lcid-1.0.0.tgz#308accafa0bc483a3867b4b6f2b9506251d1b835"
@@ -5081,7 +5123,7 @@ moment-timezone@^0.5.23:
   dependencies:
     moment ">= 2.9.0"
 
-"moment@>= 2.9.0", moment@^2.22.2:
+"moment@>= 2.9.0", moment@^2.22.2, moment@^2.24.0:
   version "2.24.0"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
   integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
@@ -5843,6 +5885,16 @@ react-native-branch@2.2.5:
   resolved "https://registry.yarnpkg.com/react-native-branch/-/react-native-branch-2.2.5.tgz#4074dd63b4973e6397d9ce50e97b57c77a518e9d"
   integrity sha1-QHTdY7SXPmOX2c5Q6XtXx3pRjp0=
 
+react-native-debugger-open@^0.3.19:
+  version "0.3.19"
+  resolved "https://registry.yarnpkg.com/react-native-debugger-open/-/react-native-debugger-open-0.3.19.tgz#d34af49cb871db5161fa46b4b5d24d01b22755a1"
+  integrity sha512-C564fBgUj365/rI5lEBDGUPXwWnw95t2pO3bLz36uXLoqrYTQS2z5cBUErm9P0mJop0s/bxy2YZqzqHlbE43Tw==
+  dependencies:
+    chalk "^1.1.3"
+    es6-template "^1.0.4"
+    minimist "^1.2.0"
+    semver "^5.4.1"
+
 react-native-gesture-handler@~1.0.14:
   version "1.0.17"
   resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.0.17.tgz#a046f371f277092157fc2781323d35a02a93daaf"
@@ -5851,6 +5903,13 @@ react-native-gesture-handler@~1.0.14:
     hoist-non-react-statics "^2.3.1"
     invariant "^2.2.2"
     prop-types "^15.5.10"
+
+react-native-loading-spinner-overlay@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-loading-spinner-overlay/-/react-native-loading-spinner-overlay-1.0.1.tgz#07f85a072b6f7d05b8749668cd626df4cc330347"
+  integrity sha512-njZZWs+cgyq6Ni7tkYEowMmuAuHVljuH4CqTWA0plNOfSzZhEcrW209y7WcgHjRWz0RvvEYF5oWGT8DWtTq8bA==
+  dependencies:
+    prop-types "^15.6.2"
 
 react-native-maps@expo/react-native-maps#v0.22.1-exp.0:
   version "0.22.1"
@@ -6574,6 +6633,11 @@ slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
   integrity sha1-xB8vbDn8FtHNF61LXYlhFK5HDVU=
+
+sliced@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/sliced/-/sliced-1.0.1.tgz#0b3a662b5d04c3177b1926bea82b03f837a2ef41"
+  integrity sha1-CzpmK10Ewxd7GSa+qCsD+Dei70E=
 
 slide@^1.1.5:
   version "1.1.6"

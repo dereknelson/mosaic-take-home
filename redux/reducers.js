@@ -1,20 +1,21 @@
+import { GET_TOP_STOCKS_SUCCESS, GET_TOP_STOCKS_ERROR, GET_BALANCE_SHEET_SUCCESS, GET_BALANCE_SHEET_ERROR,  } from "./actions";
+
 
 
 const initialState = {
-    results: []
+    results: [],
+    error: null,
 }
 
 const iexReducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'LOGIN':
-            return {
-                ...state,
-                isLoading: true,
-            };
-        default:
-        return state;
+        case GET_TOP_STOCKS_SUCCESS:
+            return { ...state, ...action.payload }
+        case GET_BALANCE_SHEET_SUCCESS:
+            return { ...state, ...action.payload }
+        default: return state;
     }
 }
 export default ({
-    whateverAPI: iexReducer
+    stocks: iexReducer
 })

@@ -5,16 +5,22 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "eject": "expo eject",
-    "test": "node ./node_modules/jest/bin/jest.js --watchAll"
+    "test": "node ./node_modules/jest/bin/jest.js --watchAll",
+    "postinstall": "rndebugger-open"
   },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
     "@expo/samples": "2.1.1",
+    "axios": "^0.18.0",
     "expo": "^32.0.0",
+    "immer": "^2.1.5",
+    "moment": "^2.24.0",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react-native-debugger-open": "^0.3.19",
+    "react-native-loading-spinner-overlay": "^1.0.1",
     "react-navigation": "^3.0.9",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",
