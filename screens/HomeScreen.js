@@ -95,9 +95,14 @@ export default class HomeScreen extends Component {
                             {getName(item.companyName)} 
                         </Text>
                     </View>
-                    <Text style={[styles.itemPrice, { color: item.change > 0 ? 'green' : 'red' }]} >
-                        ${item.latestPrice}
-                    </Text>
+                    <View style={{ flexDirection: 'column', alignItems: 'flex-end'  }} >
+                        <Text style={styles.itemPrice} >
+                            ${item.latestPrice}
+                        </Text>
+                        <Text style={{ fontSize: 14, color: item.change > 0 ? 'green' : 'red' }} >
+                            {item.change}%
+                        </Text>
+                    </View>
                 </View>
             </TouchableOpacity>
         )
