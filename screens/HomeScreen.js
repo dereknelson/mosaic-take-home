@@ -12,7 +12,6 @@ import Spinner from 'react-native-loading-spinner-overlay'
 
 import SearchIcon from 'react-native-vector-icons/EvilIcons';
 import ArrowIcon from 'react-native-vector-icons/Ionicons';
-import { AlarmMethod } from 'expo/build/Calendar';
 
 
 @connect(state => ({ 
@@ -79,6 +78,7 @@ export default class HomeScreen extends Component {
             extraData={this.props}
             renderItem={this.renderItem}
             keyExtractor={this.keyExtractor}
+            ItemSeparatorComponent={() => <View style={{ width: '80%', height:1, backgroundColor: Colors.outlineGray, alignSelf: 'center' }}/> }
             />
         )
     }
@@ -95,7 +95,7 @@ export default class HomeScreen extends Component {
                             {getName(item.companyName)} 
                         </Text>
                     </View>
-                    <Text style={styles.itemPrice} >
+                    <Text style={[styles.itemPrice, { color: item.change > 0 ? 'green' : 'red' }]} >
                         ${item.latestPrice}
                     </Text>
                 </View>
@@ -135,6 +135,7 @@ const styles = StyleSheet.create({
     },
     itemName: {
         fontSize: 18,
+        // marginLeft: 15,
     },
     itemPrice: {
         fontSize: 18,
