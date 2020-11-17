@@ -1,9 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 57665,
-  "expoServerNgrokUrl": "https://3m-5vz.metoo.mosaic-take-home.exp.direct",
-  "packagerNgrokUrl": "https://packager.3m-5vz.metoo.mosaic-take-home.exp.direct",
-  "ngrokPid": 57697
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
+  "webpackServerPort": null
 }

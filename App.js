@@ -6,6 +6,7 @@ import AppNavigator from './navigation/AppNavigator';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/es/integration/react';
 import createAppStore from './redux/store';
+import HomeScreen from './screens/HomeScreen';
 export const { persistor, store } = createAppStore()
 
 
@@ -29,7 +30,8 @@ export default class App extends Component {
                 <Provider store={store}>
                     <PersistGate persistor={persistor}>
                         {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
-                        <AppNavigator />
+                        {/* <AppNavigator /> */}
+                        <HomeScreen />
                     </PersistGate>
                 </Provider>
             </View>
@@ -40,10 +42,10 @@ export default class App extends Component {
         //     require('./assets/images/robot-dev.png'),
         //     require('./assets/images/robot-prod.png'),
         // ]),
-        Font.loadAsync({
-            ...Icon.Ionicons.font,
-            'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
-        }),
+        // Font.loadAsync({
+        //     ...Icon.Ionicons.font,
+        //     'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
+        // }),
     ])
 
     handleLoadingError = error =>  console.warn(error)
